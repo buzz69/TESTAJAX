@@ -1,4 +1,6 @@
 function comTest(){
+	/*
+	
 	$.ajax({
 		type: "POST",
 		contentType: "application/x-www-form-urlencoded;charset=utf-8",
@@ -7,5 +9,11 @@ function comTest(){
 		success: function (rep) {
 			$('#result').html(rep);
 		}
+	});
+	
+	*/
+	
+	$.post('http://www.cloudsecuritycam.com/COM/ajax.php', { action: "HELLO" } , function(data) {
+	  $('#result').html(data);
 	});
 }
