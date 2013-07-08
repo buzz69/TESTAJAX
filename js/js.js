@@ -1,10 +1,3 @@
-$( document ).bind( "mobileinit", function() {
-    // Make your jQuery Mobile framework configuration changes here!
-
-    $.mobile.allowCrossDomainPages = true;
-    $.support.cors = true;
-});
-
 function comTest(){
 	$('#result').html('Please wait...');
 	loadContents('http://www.cloudsecuritycam.com/COM/action=HELLO', function(results) {  
