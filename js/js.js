@@ -2,7 +2,7 @@ function comTest(){
 	$('#result').html('Please wait...');
 	$.ajax({
 		type       : "GET",
-		url        : "http://localhost/COM/ajax.php",
+		url        : "http://www.cloudsecuritycam.com/COM/ajax.php",
 		contentType: "application/json",  
         	dataType   : 'jsonp',  
         	data       : {action: 'HELLO', pwd: 'PASSWORD' },
