@@ -4,8 +4,8 @@ function comTest(){
 		type       : "GET",
 		url        : "http://www.cloudsecuritycam.com/COM/ajax.php",
 		contentType: "application/json",  
-        	dataType   : 'jsonp',  
-        	data       : {action: 'HELLO', pwd: 'PASSWORD' },
+        dataType   : 'jsonp',  
+        data       : {action: 'HELLO', pwd: 'PASSWORD' },
 		success    : function(response) {
 			$('#result').html(response.text);
 		},
